@@ -1,0 +1,72 @@
+Installation
+
+https://www.vagrantup.com/docs/installation/
+https://www.vagrantup.com/downloads.html
+
+install dpkg package
+
+sudo dpkg -i vagrant_1.8.1_x86_64.deb 
+
+=========================
+
+Tutorial => https://www.vagrantup.com/docs/getting-started/
+
+1. mkdir vagrant_project
+2. cd vagrant_project
+
+3. vagrant init hashicorp/precise64
+
+ => This will place a Vagrantfile in your current directory.
+
+4. vagrant box add hashicorp/precise64
+5. vagrant up
+6. vagrant ssh
+
+=====================================================================
+##### INSTALLING A BOX ################
+
+Simple 
+
+1. vagrant init
+2. vagrant box add ubuntu/trusty64  
+   => for installing 64 bit of UBuntu
+
+This will download the box named "ubuntu/trusty64" from HashiCorp's Atlas box catalog, a place where you can find and host boxes.
+
+===============================================================================
+
+=> Sync folders
+
+
+Vagrant shares your project directory (remember, that is the one with the Vagrantfile) to the /vagrant directory in your guest machine.
+
+=> ls /vagrant  
+ on the guest machine 
+
+=================================
+
+PROVISIONING
+
+Create shell script and execute its commands.
+
+=> vagrant reload --provision
+
+====================================
+
+
+vagrant package
+
+vagrant status
+
+vagrant box list
+
+
+
+
+
+
+
+
+
+
+ 
